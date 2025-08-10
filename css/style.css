@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: 'Passion One', 'cursive';
+    --fonte03: 'Sriracha', 'cursive';
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: #ccc;
+    font-family: var(--fonte01);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    font-family: var(--fonte02);
+    font-size: 8vh;
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+header > p {
+    padding-top: 8px;
+    padding-bottom: 50px;
+}
+
+a {
+    font-weight: bolder;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover, a:focus {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte03);
+    font-size: 3.5vh;
+    padding: 10vh 0;
+    line-height: 2em;
+    padding-left: 30px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section article {
+    padding-bottom: 2em;
+}
+
+section.imagem {
+    background-color: #333;
+    color: white;
+    box-shadow: inset 6px 6px 13px rgba(0, 0, 0, 0.651);
+}
+
+section.imagem > article {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.815);
+    padding: 10px;
+    box-shadow: 1px 1px 0px #000000;
+}
+
+section#img1 {
+    background: url('../imagens-fundos/fundo01.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+section#img2 {
+    background: url('../imagens-fundos/fundo02.jpg') no-repeat bottom center fixed;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: #ccc;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 10px;
+}
+
+footer > strong {
+    color: white;
+}
+
+@media screen and (min-width: 768px){
+    header > h1 {
+        font-size: 10vh;
+    }
+
+    section {
+        font-size: 3vh;
+        padding: 10vh 100px;
+    }
+
+    section > article {
+        margin: 0 100px;
+    }
+
+    footer {
+        font-size: 1em;
+    }
+}
